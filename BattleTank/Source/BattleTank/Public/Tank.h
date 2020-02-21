@@ -34,4 +34,7 @@ private:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//
+	UPROPERTY(EditAnywhere, Category = Firing)
+		float LaunchSpeed = 156464; // Meters Per Second which is the approximate speed of an M1 Abrams Tank round's velocity.
 };
