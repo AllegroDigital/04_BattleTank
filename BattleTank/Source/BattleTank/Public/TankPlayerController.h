@@ -6,6 +6,9 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h" // Must be the last include (UE4 Quirk)
 
+// Forward Declarations
+class ATank;
+
 /**
  * 
  */
@@ -21,7 +24,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	class ATank* GetControlledTank() const;
+	ATank* GetControlledTank() const;
 	// Start the tank moving the barrel so that a shot would hit where the crosshair intersects the world
 	void AimTowardsCrosshair();
 
