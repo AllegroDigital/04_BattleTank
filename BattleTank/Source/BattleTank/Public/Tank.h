@@ -40,5 +40,5 @@ private:
 
 	//
 	UPROPERTY(EditAnywhere, Category = Firing)
-		float LaunchSpeed = 156464; // Meters Per Second which is the approximate speed of an M1 Abrams Tank round's velocity.
+		float LaunchSpeed = 4000; // 156464 Meters Per Second is the approximate speed of an M1 Abrams Tank round's velocity. The entered value is just for funsies.
 };
